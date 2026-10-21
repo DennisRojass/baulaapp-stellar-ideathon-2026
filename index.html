@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baulaapp · Aporte trazable en Stellar Testnet</title>
+    <meta name="description" content="Prototipo educativo de un aporte ficticio vinculado a una experiencia de turismo responsable." />
+  </head>
+  <body>
+    <main>
+      <header class="topbar"><span class="brand">BAULA<span>APP</span></span><span class="network">● Stellar Testnet · demo</span></header>
+      <section class="hero">
+        <p class="eyebrow">Viajar es cuidar</p>
+        <h1>Una experiencia local.<br /><em>Un aporte que puedes comprobar.</em></h1>
+        <p>Prototipo educativo para la Pura Vida Ideathon. La experiencia y la campaña son ficticias; aquí solo se mueven XLM de prueba.</p>
+      </section>
+      <div class="grid">
+        <section class="card">
+          <p class="step">01 / EXPERIENCIA DE EJEMPLO</p>
+          <h2>Sendero de bosque y comunidad</h2>
+          <p>Imagina que encuentras una experiencia responsable en Costa Rica y decides apoyar voluntariamente una iniciativa territorial relacionada.</p>
+          <div class="detail"><span>Experiencia</span><strong>Ficticia · sin reserva</strong></div>
+          <div class="detail"><span>Aporte de prueba</span><strong>1 XLM · Testnet</strong></div>
+          <div class="detail"><span>Referencia pública</span><strong>BAULA-DEMO</strong></div>
+          <p class="note">Este aporte no compra la experiencia, ni representa el reparto 82/8/10 o un impacto ambiental comprobado.</p>
+        </section>
+        <section class="card action">
+          <p class="step">02 / APORTE TRAZABLE</p>
+          <h2>Conecta y comprueba</h2>
+          <p>Necesitas la extensión Freighter con una cuenta financiada en Testnet. La clave secreta permanece en tu wallet.</p>
+          <div id="config" class="status">Cargando configuración…</div>
+          <button id="connect" type="button">Conectar Freighter</button>
+          <p id="address" class="mono muted">Wallet sin conectar</p>
+          <button id="send" type="button" disabled>Firmar y enviar 1 XLM de prueba</button>
+          <label for="hash">Hash de transacción</label>
+          <input id="hash" placeholder="Pega un hash Testnet de 64 caracteres" autocomplete="off" spellcheck="false" />
+          <button id="verify" type="button">Verificar en Stellar</button>
+          <div id="result" class="status" role="status" aria-live="polite">Preparado para iniciar.</div>
+        </section>
+      </div>
+      <section class="card evidence">
+        <p class="step">03 / QUÉ DEMUESTRA LA RED</p>
+        <h2>Pago verificable ≠ impacto verificado</h2>
+        <div class="two"><p><strong>Stellar confirma</strong><br />Red, transacción exitosa, cuenta receptora, importe y referencia de la campaña ficticia.</p><p><strong>Baulaapp debe comprobar aparte</strong><br />Quién gestionó el proyecto, cómo se usaron fondos y qué ocurrió en el territorio. Eso requiere registros y revisión humana.</p></div>
+        <div id="receipt" class="receipt" hidden></div>
+      </section>
+      <footer>Baulaapp · demostración en Testnet · ningún fondo real ni reserva comercial</footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
+
